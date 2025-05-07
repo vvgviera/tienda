@@ -7,3 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const botonComprar = document.getElementById("comprarBtn");
+
+    botonComprar.addEventListener("click", function () {
+        alert("Producto 1 agregado al carrito.");
+    });
+});
+
