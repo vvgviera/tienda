@@ -8,7 +8,7 @@ body {
 
 
 .card-img-top {
-    width: 100%;
+    width: 50%;
     height: 250px; /* Ajusta la altura según lo necesites */
     object-fit: cover; /* Esto mantiene la proporción y recorta el exceso */
 }
