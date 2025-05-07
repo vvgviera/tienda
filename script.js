@@ -55,4 +55,32 @@ document.addEventListener("DOMContentLoaded", function () {
     actualizarCarrito();
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+    function agregarAlCarrito(nombre, precio) {
+        let productoExistente = carrito.find(producto => producto.nombre === nombre);
+
+        if (productoExistente) {
+            productoExistente.cantidad++;
+        } else {
+            carrito.push({ nombre, precio, cantidad: 1 });
+        }
+
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+        alert(`${nombre} ha sido agregado al carrito.`);
+    }
+
+    const botonesCompra = document.querySelectorAll(".btn-comprar");
+
+    botonesCompra.forEach(boton => {
+        boton.addEventListener("click", function () {
+            let nombre = this.dataset.nombre;
+            let precio = parseFloat(this.dataset.precio);
+            agregarAlCarrito(nombre, precio);
+        });
+    });
+});
+
+
 
