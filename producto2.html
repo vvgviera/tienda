@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto 1 - Tienda Online</title>
+    <title>Producto 2 - Tienda Online</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,7 +17,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="categorias.html">Categorias</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
                     <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
                 </ul>
@@ -25,21 +25,55 @@
         </div>
     </nav>
 
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6323/6323216_sd.jpg;maxHeight=1080;maxWidth=900?format=webp" class="img-fluid" alt="Producto 2">
-            </div>
-            <div class="col-md-6">
-                <h2>Samsung - 28 Cu.</h2>
-                <p>Samsung - 28 Cu. Ft. 4-Door French Door Smart Refrigerator with FlexZone Drawer - Stainless Steel</p>
-                <p><strong>Precio:</strong>$1,799.99</p>
-                <button class="btn btn-primary btn-comprar" data-nombre="Producto 2" data-precio="1799.99">Agregar al Carrito</button>
+<div class="container">
+    <div class="row">
+        <!-- Carrusel de imágenes -->
+        <div class="col-md-6">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://i.postimg.cc/cLH6VcgK/1.jpg" class="d-block w-100" alt="Imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.postimg.cc/NGkMFnR9/2.jpg" class="d-block w-100" alt="Imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.postimg.cc/NM7gyy2q/3.jpg" class="d-block w-100" alt="Imagen 3">
+                    </div>
+					<div class="carousel-item">
+                        <img src="https://i.postimg.cc/90LCpvBL/4.jpg" class="d-block w-100" alt="Imagen 4">
+                    </div>
+					<div class="carousel-item">
+                        <img src="https://i.postimg.cc/rp2XSVk8/5.jpg" class="d-block w-100" alt="Imagen 5">
+                    </div>
+					
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
         </div>
+
+        <!-- Detalles del producto -->
+		
+				
+			<div class="col-md-6">
+                <h2>SAMSUNG 43-Inch Class Crystal UHD 4K DU7200</h2>
+                <p><strong>Descripción:</strong> SAMSUNG 43-Inch Class Crystal UHD 4K DU7200 Series HDR Smart TV w/Object Tracking Sound Lite, PurColor, Motion Xcelerator, Mega Contrast, Q-Symphony (UN43DU7200, 2024 Model)</p>
+                <p><strong>Precio:</strong>$377.99</p>
+                <button class="btn btn-primary btn-comprar" data-nombre="SAMSUNG 43-Inch Class Crystal UHD 4K DU7200" data-precio="377.99">Agregar al Carrito</button>
+            </div>
+		
     </div>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    
+	<script src="script.js"></script>
+	
+	<script src="galleria-master/dist/galleria.js"></script>
 </body>
 </html>
