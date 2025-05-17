@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 	document.getElementById("datoscliente").addEventListener("click", function () {
     alert("Introducir datos personales y de la compra");
-    window.location.href = "email2.html"; // Redirige a index.html
+    window.location.href = "email1.html"; // Redirige a index.html
 });
 
 
