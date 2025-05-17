@@ -1,9 +1,11 @@
+// JavaScript Document
+
 document.addEventListener("DOMContentLoaded", function () {
     const botonesCompra = document.querySelectorAll(".btn-primary");
 
     botonesCompra.forEach(boton => {
         boton.addEventListener("click", function () {
-            alert("Producto agregado al carrito.");
+            //alert("Producto agregado al carrito.");
         });
     });
 });
@@ -15,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Comprar producto");
     });
 });
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
@@ -53,6 +57,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     actualizarCarrito();
+	
+	
+	document.getElementById("datoscliente").addEventListener("click", function () {
+    alert("Introducir datos personales y de la compra");
+    window.location.href = "email2.html"; // Redirige a index.html
+});
+
+
+   
+	
 });
 
 //Agregar al carrito
@@ -84,5 +98,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+Galleria.configure({
+  transition: "fade",
+  imageCrop: false,
+  lightbox: true,
+  responsive: true,
+  showInfo: true,
+  height: 600,
+});
 
+Galleria.run();
 
