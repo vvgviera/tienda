@@ -18,25 +18,25 @@
 
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-    let total = carrito.reduce((acc, producto) => acc + producto.precio * producto.cantidad, 0);
-    let mensaje = "Productos comprados: ";
+   // document.addEventListener("DOMContentLoaded", function() {
+  //  let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+   // let total = carrito.reduce((acc, producto) => acc + producto.precio * producto.cantidad, 0);
+   // let mensaje = "Productos comprados: ";
 
-    carrito.forEach(producto => {
-        mensaje += ` ${producto.nombre} - $${producto.precio.toFixed(2)} (Cantidad: ${producto.cantidad}),`;
-    });
+   // carrito.forEach(producto => {
+   //     mensaje += ` ${producto.nombre} - $${producto.precio.toFixed(2)} (Cantidad: ${producto.cantidad}),`;
+  //  });
 
-    mensaje += ` Total a pagar: $${total.toFixed(2)}`;
-    mensaje = mensaje.replace(/\n/g, " "); // Elimina los saltos de línea
+   // mensaje += ` Total a pagar: $${total.toFixed(2)}`;
+   // mensaje = mensaje.replace(/\n/g, " "); // Elimina los saltos de línea
 
-    let productosElement = document.getElementById("productos");
-    if (productosElement) {
-        productosElement.value = mensaje;
-    } else {
-        console.error("Elemento 'productos' no encontrado.");
-    }
-});
+  //  let productosElement = document.getElementById("productos");
+  //  if (productosElement) {
+   //     productosElement.value = mensaje;
+   // } else {
+   //     console.error("Elemento 'productos' no encontrado.");
+  //  }
+//});
 
 
    
